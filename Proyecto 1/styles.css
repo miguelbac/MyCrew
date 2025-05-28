@@ -1,0 +1,64 @@
+body{
+     font-family: sans-serif;
+}
+
+.header {
+    background: rgb(238, 238, 238);
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+    position: relative;
+}
+
+.button{
+    border-radius: 6px;
+    background: none;
+    font-size: 15px;
+    border: 1px solid black;
+    position: absolute;
+    top: 25%;
+    right: 25px;
+    width: 140px;
+    padding: 0;
+    transition: transform 0.3 ease;
+    cursor: pointer; 
+
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    gap: 2rem 2rem;
+}
+
+.flex-container > div {
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+        
+#img1 {
+    border-radius: 22px;
+    padding: 20px 20px 0;
+    width: 150px;
+    height: auto;
+}
+
+#img2 {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 20px;
+}
+
+#nombre{
+    font-size: 15px;
+}
