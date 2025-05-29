@@ -55,3 +55,23 @@ main article{
     height: 20px;
 
 }
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.tarjeta{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(142, 141, 141);
+    border-radius: 10px;
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
