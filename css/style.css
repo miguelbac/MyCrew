@@ -6,12 +6,18 @@
 
 header {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
   background-color: var(--verdelima);
   border-bottom: 1px solid #ddd;
-  font-family:"Krona One",Arial, Helvetica, sans-serif;
+  font-family: "Krona One", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--fondo-pagina);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--color-fuente);
 }
 
 body{
@@ -58,8 +64,8 @@ header button:hover {
 }
 .galeria {
   display: flex;
-  flex-wrap: wrap;                
-  gap: 2rem;                   
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
 }
 
@@ -71,7 +77,7 @@ header button:hover {
   text-align: center;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .tarjeta img{
@@ -82,4 +88,24 @@ header button:hover {
     height: 46px;
     width: 43px
 
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.tarjeta{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(142, 141, 141);
+    border-radius: 10px;
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
 }
