@@ -1,57 +1,83 @@
-:root{
-  --verdelima:#AEFF00;
-  --fondo-pagina:#FBFFEC;
-}
-
-body{
-  background-color: var(--fondo-pagina);
+:root {
+  --verdelima: #dbfb73;
+  --fondo-pagina: #fbffec;
+  --color-fuente: #37363e;
 }
 
 header {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
   background-color: var(--verdelima);
   border-bottom: 1px solid #ddd;
-  font-family:"Krona One",Arial, Helvetica, sans-serif;
+  font-family: "Krona One", Arial, Helvetica, sans-serif;
 }
 
-header h2 {
-  margin: 0;                      
+body {
+  background-color: var(--fondo-pagina);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--color-fuente);
+}
+
+header h3 {
+  margin: 0;
   font-size: 1.5rem;
 }
 
-header span {
+header button {
   padding: 0.5rem 1rem;
   border: 1px solid #000;
   background-color: var(--verdelima);
   cursor: pointer;
   border-radius: 6px;
+  /* height: 60px;
+  width: 229px; */
 }
 
-main article{
-  text-align: center;
-}
-
-.equipo {
+.galeria {
   display: flex;
-  flex-wrap: wrap;                
-  gap: 2rem;                   
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
 }
 
-.card {
-  flex: 1 1 200px;                
-  max-width: 220px;             
+.presentacion {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-fuente);
+}
+.presentacion h1 {
+  font-family: "Krona One", sans-serif;
+  margin-bottom: 1px;
+}
+.presentacion p {
+  font-family: "Roboto", sans-serif;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  font-size: large;
+}
+
+.tarjeta {
+  flex: 1 1 200px;
+  max-width: 220px;
   border: 1px solid #ccc;
   padding: 1rem;
   text-align: center;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.icono{
-    height: 20px;
 
+.tarjeta img {
+  width: 200px;
+  height: 200px;
+}
+.tarjeta a img {
+  height: 46px;
+  width: 43px;
 }
