@@ -1,7 +1,7 @@
-:root {
-  --verdelima: #dbfb73;
-  --fondo-pagina: #fbffec;
-  --color-fuente: #37363e;
+:root{
+  --verdelima:#DBFB73;
+  --fondo-pagina:#FBFFEC;
+  --color-fuente:#37363E
 }
 
 header {
@@ -20,8 +20,14 @@ body {
   color: var(--color-fuente);
 }
 
+body{
+  background-color: var(--fondo-pagina);
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
+  color: var(--color-fuente);
+}
+
 header h3 {
-  margin: 0;
+  margin: 0;                      
   font-size: 1.5rem;
 }
 
@@ -35,6 +41,13 @@ header button {
   width: 229px; */
 }
 
+.presentacion{
+  text-align: center;
+}
+.presentacion h1{
+  font-family:"Krona One",Arial, Helvetica, sans-serif;
+
+}
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -42,29 +55,9 @@ header button {
   justify-content: center;
 }
 
-.presentacion {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-fuente);
-}
-.presentacion h1 {
-  font-family: "Krona One", sans-serif;
-  margin-bottom: 1px;
-}
-.presentacion p {
-  font-family: "Roboto", sans-serif;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
-  font-size: large;
-}
-
 .tarjeta {
-  flex: 1 1 200px;
-  max-width: 220px;
+  flex: 1 1 200px;                
+  max-width: 220px;             
   border: 1px solid #ccc;
   padding: 1rem;
   text-align: center;
@@ -73,11 +66,32 @@ header button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.tarjeta img {
+.tarjeta img{
   width: 200px;
   height: 200px;
 }
-.tarjeta a img {
-  height: 46px;
-  width: 43px;
+.tarjeta a img{
+    height: 46px;
+    width: 43px
+
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.tarjeta{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(142, 141, 141);
+    border-radius: 10px;
+    flex: 0 0 auto;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
 }
