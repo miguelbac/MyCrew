@@ -1,10 +1,7 @@
 :root{
-  --verdelima:#AEFF00;
+  --verdelima:#DBFB73;
   --fondo-pagina:#FBFFEC;
-}
-
-body{
-  background-color: var(--fondo-pagina);
+  --color-fuente:#37363E
 }
 
 header {
@@ -17,31 +14,42 @@ header {
   font-family:"Krona One",Arial, Helvetica, sans-serif;
 }
 
-header h2 {
+body{
+  background-color: var(--fondo-pagina);
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
+  color: var(--color-fuente);
+}
+
+header h3 {
   margin: 0;                      
   font-size: 1.5rem;
 }
 
-header span {
+header button {
   padding: 0.5rem 1rem;
   border: 1px solid #000;
   background-color: var(--verdelima);
   cursor: pointer;
   border-radius: 6px;
+  /* height: 60px;
+  width: 229px; */
 }
 
-main article{
+.presentacion{
   text-align: center;
 }
+.presentacion h1{
+  font-family:"Krona One",Arial, Helvetica, sans-serif;
 
-.equipo {
+}
+.galeria {
   display: flex;
   flex-wrap: wrap;                
   gap: 2rem;                   
   justify-content: center;
 }
 
-.card {
+.tarjeta {
   flex: 1 1 200px;                
   max-width: 220px;             
   border: 1px solid #ccc;
@@ -51,8 +59,14 @@ main article{
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.icono{
-    height: 20px;
+
+.tarjeta img{
+  width: 200px;
+  height: 200px;
+}
+.tarjeta a img{
+    height: 46px;
+    width: 43px
 
 }
 
