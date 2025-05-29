@@ -54,6 +54,10 @@ header button:hover {
 }
 
 
+header button p {
+  margin-top: 2px;
+}
+
 
 .presentacion{
   text-align: center;
