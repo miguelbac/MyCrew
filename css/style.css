@@ -1,10 +1,20 @@
+:root{
+  --verdelima:#AEFF00;
+  --fondo-pagina:#FBFFEC;
+}
+
+body{
+  background-color: var(--fondo-pagina);
+}
+
 header {
   display: flex;
   justify-content: space-between; 
   align-items: center; 
   padding: 1rem 2rem;
-  background-color: #f5f5f5;
+  background-color: var(--verdelima);
   border-bottom: 1px solid #ddd;
+  font-family:"Krona One",Arial, Helvetica, sans-serif;
 }
 
 header h2 {
@@ -15,12 +25,14 @@ header h2 {
 header span {
   padding: 0.5rem 1rem;
   border: 1px solid #000;
-  background-color: white;
-  font-weight: bold;
+  background-color: var(--verdelima);
   cursor: pointer;
   border-radius: 6px;
 }
 
+main article{
+  text-align: center;
+}
 
 .equipo {
   display: flex;
