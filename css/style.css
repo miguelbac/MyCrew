@@ -26,14 +26,28 @@ header h3 {
 }
 
 header button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #000;
+  border: 1px solid #37363E;
+  box-shadow: 1px 1px 1px #37363E;
   background-color: var(--verdelima);
   cursor: pointer;
   border-radius: 6px;
-  /* height: 60px;
-  width: 229px; */
+  font-size: 18px;
+  justify-content: center;
+  display: flex;
+  width: 150px;
+  height: 30px;
+  
 }
+
+header button:hover {
+  background-color: #37363E;
+  color: #DBFB73;
+  box-shadow: none;
+  opacity: 0.7;
+  
+}
+
+
 
 .presentacion{
   text-align: center;
