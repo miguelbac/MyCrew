@@ -1,8 +1,9 @@
-:root{
-  --verdelima:#DBFB73;
-  --fondo-pagina:#FBFFEC;
-  --color-fuente:#37363E
+:root {
+  --verdelima: #DBFB73;
+  --fondo-pagina: #FBFFEC;
+  --color-fuente: #37363E;
 }
+
 /* TODO: List 
   Ajustar el grid (que sean 2 cartas solo en ancho completo)
   Ajustar cards (que tenga el ancho del figma)
@@ -32,6 +33,12 @@ header {
   align-items: center;
 }
 
+body {
+  background-color: var(--fondo-pagina);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--color-fuente);
+}
+
 header h3 {
   margin: 0;                      
   font-size: 2rem;
@@ -54,11 +61,7 @@ header button:hover {
   background-color: #37363E;
   color: #DBFB73;
   box-shadow: none;
-  opacity: 0.7;  
-}
-
-header a{
-  text-decoration: none;
+  opacity: 0.7;
 }
 
 header button p {
@@ -81,31 +84,83 @@ header button p {
 }
 
 .galeria {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
   justify-content: center;
+  justify-items: center;
+  padding: 2rem;
+}
+
+@media (min-width: 480px) and (max-width: 999px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media (min-width: 1000px) {
+  .galeria {
+    grid-template-columns: repeat(2, 475px);
+    justify-content: center;
+  }
 }
 
 .tarjeta {
-  flex: 0 0 auto;
-  width: 300px;
-  max-width: 300px; /* coherente con width fija */
-  border: 1px solid rgb(142, 141, 141);
+  box-sizing: border-box;
+  border: 1px solid #8E8D8D;
   border-radius: 10px;
-  padding: 10px;
-  text-align: center;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.tarjeta img{
-  width: 200px;
-  height: 200px;
+@media (max-width: 479px) {
+  .tarjeta {
+    min-width: 284px;
+    min-height: 213px;
+  }
 }
 
-.tarjeta a img{
-    height: 46px;
-    width: 43px;
+@media (min-width: 480px) and (max-width: 999px) {
+  .tarjeta {
+    width: 100%;
+    max-width: 350px;
+    min-height: 230px;
+  }
 }
 
+@media (min-width: 1000px) {
+  .tarjeta {
+    width: 100%;
+    max-width: 475px;
+    max-height: 250px;
+  }
+}
+
+.tarjeta img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta a img {
+  height: 46px;
+  width: 43px;
+  margin: 0 0.5rem;
+}
+
+.tarjeta-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
