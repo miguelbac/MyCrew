@@ -1,17 +1,36 @@
-:root{
-  --verdelima:#DBFB73;
-  --fondo-pagina:#FBFFEC;
-  --color-fuente:#37363E
+:root {
+  --verdelima: #DBFB73;
+  --fondo-pagina: #FBFFEC;
+  --color-fuente: #37363E;
+}
+
+/* TODO: List 
+  Ajustar el grid (que sean 2 cartas solo en ancho completo)
+  Ajustar cards (que tenga el ancho del figma)
+  Ajustar boton Que hacemos
+  Ajustar encabeza
+  Cambiar logo linkedin
+  Meter enlaces
+*/
+
+body {
+  background-color: var(--fondo-pagina);
+  font-family: "Roboto", "Comic Sans", cursive;
+  color: var(--color-fuente);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 2rem;
   background-color: var(--verdelima);
-  border-bottom: 1px solid #ddd;
   font-family: "Krona One", Arial, Helvetica, sans-serif;
+  height: 4rem;
+  align-items: center;
 }
 
 body {
@@ -20,15 +39,9 @@ body {
   color: var(--color-fuente);
 }
 
-body{
-  background-color: var(--fondo-pagina);
-  font-family: "Roboto",Arial, Helvetica, sans-serif;
-  color: var(--color-fuente);
-}
-
 header h3 {
   margin: 0;                      
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 header button {
@@ -40,9 +53,8 @@ header button {
   font-size: 18px;
   justify-content: center;
   display: flex;
-  width: 150px;
-  height: 30px;
-  
+  width: 9rem;
+  height: 2rem;
 }
 
 header button:hover {
@@ -50,66 +62,105 @@ header button:hover {
   color: #DBFB73;
   box-shadow: none;
   opacity: 0.7;
-  
 }
-
 
 header button p {
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
+@media (max-width: 600px) {
+  header h3 {
+    font-size: 1.8rem;
+  }
+}
 
 .presentacion{
   text-align: center;
+  padding: 0rem 1rem 0.5rem 1rem;
 }
+
 .presentacion h1{
   font-family:"Krona One",Arial, Helvetica, sans-serif;
-
 }
+
 .galeria {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
   justify-content: center;
+  justify-items: center;
+  padding: 2rem;
+}
+
+@media (min-width: 480px) and (max-width: 999px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media (min-width: 1000px) {
+  .galeria {
+    grid-template-columns: repeat(2, 475px);
+    justify-content: center;
+  }
 }
 
 .tarjeta {
-  flex: 1 1 200px;                
-  max-width: 220px;             
-  border: 1px solid #ccc;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #8E8D8D;
+  border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.tarjeta img{
-  width: 200px;
-  height: 200px;
-}
-.tarjeta a img{
-    height: 46px;
-    width: 43px
-
+@media (max-width: 479px) {
+  .tarjeta {
+    min-width: 284px;
+    min-height: 213px;
+  }
 }
 
-.tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
+@media (min-width: 480px) and (max-width: 999px) {
+  .tarjeta {
+    width: 100%;
+    max-width: 350px;
+    min-height: 230px;
+  }
 }
 
-.tarjeta{
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(142, 141, 141);
-    border-radius: 10px;
-    flex: 0 0 auto;
-    width: 300px;
-    text-align: center;
-    padding: 10px;
+@media (min-width: 1000px) {
+  .tarjeta {
+    width: 100%;
+    max-width: 475px;
+    max-height: 250px;
+  }
+}
+
+.tarjeta img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta a img {
+  height: 46px;
+  width: 43px;
+  margin: 0 0.5rem;
+}
+
+.tarjeta-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
