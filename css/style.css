@@ -14,23 +14,27 @@
 
 body {
   background-color: var(--fondo-pagina);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Comic Sans", cursive;
   color: var(--color-fuente);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 2rem;
   background-color: var(--verdelima);
-  border-bottom: 1px solid #ddd;
   font-family: "Krona One", Arial, Helvetica, sans-serif;
+  height: 4rem;
+  align-items: center;
 }
 
 header h3 {
   margin: 0;                      
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 header button {
@@ -42,8 +46,8 @@ header button {
   font-size: 18px;
   justify-content: center;
   display: flex;
-  width: 150px;
-  height: 30px;  
+  width: 9rem;
+  height: 2rem;
 }
 
 header button:hover {
@@ -57,20 +61,25 @@ header a{
   text-decoration: none;
 }
 
-
 header button p {
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
+@media (max-width: 600px) {
+  header h3 {
+    font-size: 1.8rem;
+  }
+}
 
 .presentacion{
   text-align: center;
+  padding: 0rem 1rem 0.5rem 1rem;
 }
 
 .presentacion h1{
   font-family:"Krona One",Arial, Helvetica, sans-serif;
-
 }
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +106,6 @@ header button p {
 
 .tarjeta a img{
     height: 46px;
-    width: 43px
-
+    width: 43px;
 }
 
