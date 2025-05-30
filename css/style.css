@@ -11,6 +11,13 @@
   Cambiar logo linkedin
   Meter enlaces
 */
+
+body {
+  background-color: var(--fondo-pagina);
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: var(--color-fuente);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -19,18 +26,6 @@ header {
   background-color: var(--verdelima);
   border-bottom: 1px solid #ddd;
   font-family: "Krona One", Arial, Helvetica, sans-serif;
-}
-
-body {
-  background-color: var(--fondo-pagina);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: var(--color-fuente);
-}
-
-body{
-  background-color: var(--fondo-pagina);
-  font-family: "Roboto",Arial, Helvetica, sans-serif;
-  color: var(--color-fuente);
 }
 
 header h3 {
@@ -48,20 +43,18 @@ header button {
   justify-content: center;
   display: flex;
   width: 150px;
-  height: 30px;
-  
-}
-
-header a{
-  text-decoration: none;
+  height: 30px;  
 }
 
 header button:hover {
   background-color: #37363E;
   color: #DBFB73;
   box-shadow: none;
-  opacity: 0.7;
-  
+  opacity: 0.7;  
+}
+
+header a{
+  text-decoration: none;
 }
 
 
@@ -73,6 +66,7 @@ header button p {
 .presentacion{
   text-align: center;
 }
+
 .presentacion h1{
   font-family:"Krona One",Arial, Helvetica, sans-serif;
 
@@ -85,12 +79,13 @@ header button p {
 }
 
 .tarjeta {
-  flex: 1 1 200px;                
-  max-width: 220px;             
-  border: 1px solid #ccc;
-  padding: 1rem;
+  flex: 0 0 auto;
+  width: 300px;
+  max-width: 300px; /* coherente con width fija */
+  border: 1px solid rgb(142, 141, 141);
+  border-radius: 10px;
+  padding: 10px;
   text-align: center;
-  border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -99,28 +94,10 @@ header button p {
   width: 200px;
   height: 200px;
 }
+
 .tarjeta a img{
     height: 46px;
     width: 43px
 
 }
 
-.tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.tarjeta{
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(142, 141, 141);
-    border-radius: 10px;
-    flex: 0 0 auto;
-    width: 300px;
-    text-align: center;
-    padding: 10px;
-}
