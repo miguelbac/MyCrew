@@ -33,11 +33,6 @@ header {
   align-items: center;
 }
 
-body {
-  background-color: var(--fondo-pagina);
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: var(--color-fuente);
-}
 
 header h3 {
   margin: 0;                      
@@ -70,7 +65,7 @@ header button p {
 
 @media (max-width: 600px) {
   header h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -150,11 +145,18 @@ header button p {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 0.5rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+.tarjeta p{
+  margin: 0;
+  font-family: "Krona One", Arial, Helvetica, sans-serif;
+
 }
 
 .tarjeta a img {
   height: 46px;
-  width: 43px;
+  width: 46px;
   margin: 0 0.5rem;
 }
 
