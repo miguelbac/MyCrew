@@ -24,9 +24,11 @@
 <header class="top-bar">
   <h3 class="logo">Factoriza²</h3>
 
-  <button class="menu-toggle" aria-label="Abrir menú">
-    ☰
-  </button>
+<button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
 
   <nav class="botonera">
     <a href="./quienes-somos.html" class="boton">Inicio</a>
@@ -106,9 +108,12 @@
   const nav = document.querySelector('.botonera');
 
   toggleBtn.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    const expanded = toggleBtn.getAttribute('aria-expanded') === 'true' || false;
+    const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
     toggleBtn.setAttribute('aria-expanded', !expanded);
+    nav.classList.toggle('active');
+    toggleBtn.classList.toggle('active');
   });
 </script>
+
+
 </html>
