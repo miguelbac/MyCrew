@@ -120,6 +120,7 @@ body {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 ||||||| parent of 779dd5b (CSS modal)
@@ -164,3 +165,24 @@ width: ;
 }
 =======
 >>>>>>> 4e7e129 (TODO: CSS Grid Modal)
+||||||| parent of 779dd5b (CSS modal)
+=======
+
+/* ESTILOS PARA LAS MODALES*/
+.modal{
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 1rem;
+
+}
+
+.modal img{
+width: ;
+}
+>>>>>>> 779dd5b (CSS modal)
