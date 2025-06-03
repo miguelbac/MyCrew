@@ -59,3 +59,6 @@ dialog .contenedorModal .especialidades{
 dialog .contenedorModal .cerrar{
   grid-area: cerrar;
 }
+dialog .contenedorModal .iconoPortatil{
+  
+}
