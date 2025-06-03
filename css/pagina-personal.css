@@ -21,7 +21,7 @@
 
 .modal img{
 /* width: ; */
-
+dialog{ padding: 0;}
 dialog .contenedorModal{
     /* max-width: 1000px; */
     /* margin: 20px auto; */
@@ -43,8 +43,8 @@ dialog .contenedorModal h2{
 }
 dialog .contenedorModal .fotoPerfil{
   grid-area: fotoPerfil;
-  height: 271px;
-  width: 271px;
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
 
 }
