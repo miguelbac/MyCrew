@@ -104,3 +104,23 @@ a:link {
     z-index: 1000;
   }
 }
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .botonera {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .boton {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.5rem;
+  }
+}
