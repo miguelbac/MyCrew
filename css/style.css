@@ -67,7 +67,7 @@ a:link {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header h3 {
     font-size: 1.6rem;
   }
@@ -76,9 +76,14 @@ a:link {
   }
 
   header button p{
-    font-size: 13px;
+    font-size: 11px;
     margin: auto;
+    color: var(--color-fuente);
   }
+  a:link {
+    text-decoration: none;
+  }
+
 }
 
 .presentacion{
