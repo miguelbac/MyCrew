@@ -31,6 +31,8 @@
       href="./img/favicon-16x16.png"
     />
     <link rel="manifest" href="./img/site.webmanifest" />
+
+    <script src="./scripts/script.js"></script>
   </head>
 
   <body>
@@ -73,7 +75,7 @@
       <div class="tarjeta">
         <img src="./img/miguelFoto.jpg" 
         alt="retrato Miguel" />
-        <p>Miguel Ballesteros Acebal</p>
+        <p id="nombreMiguel">Miguel Ballesteros Acebal</p>
         <div class="tarjeta-links">
           <a target="_blank" href="https://www.linkedin.com/in/miguelbac/">
             <img
@@ -89,7 +91,14 @@
           </a>
         </div>
       </div>
-
+      <!-- UNDER CONSTRUCTION MODAL -->
+      <dialog id="modalMiguel">
+        <img src="./img/miguelFoto.jpg" alt="Foto Miguel"">
+        <img src="./img/close.png" alt="Cerrar" class="cerrar">
+        <h2>Miguel Ballesteros Acebal</h2>
+        <p>¡Hola! Soy Miguel, desarrollador web apasionado por crear soluciones digitales eficientes y creativas. Con experiencia en tecnologías como HTML, CSS, JavaScript y frameworks modernos, me especializo en construir sitios y aplicaciones web responsivas, rápidas.</p>
+      </dialog>
+      <!-- FIN MODAL -->
       <div class="tarjeta">
         <img
           src="./img/fotoPaula.png"
