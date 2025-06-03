@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
      nombreMiguel.addEventListener("click",function(){
         modalMiguel.showModal();
+   console.log("hola");
         
     });
     
