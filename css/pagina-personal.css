@@ -1,0 +1,61 @@
+
+/* ESTILOS PARA LAS MODALES*/
+
+:root {
+  --verdelima: #DBFB73;
+  --fondo-pagina: #FBFFEC;
+  --color-fuente: #37363E;
+}
+/* .modal{
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 1rem;
+
+}
+
+.modal img{
+/* width: ; */
+
+dialog .contenedorModal{
+    /* max-width: 1000px; */
+    /* margin: 20px auto; */
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+        "nav nav nav nav"
+        "fotoPerfil fotoPerfil descripcion descripcion"
+        "especialidades especialidades especialidades cerrar"
+        ;
+    padding: 0;
+}
+dialog .contenedorModal h2{
+  background-color: var(--verdelima);
+  margin:0;
+  grid-area: nav;
+}
+dialog .contenedorModal .fotoPerfil{
+  grid-area: fotoPerfil;
+  height: 271px;
+  width: 271px;
+  border-radius: 50%;
+
+}
+
+dialog .contenedorModal p {
+  grid-area: descripcion;
+}
+
+dialog .contenedorModal .especialidades{
+  grid-area: especialidades;
+}
+dialog .contenedorModal .cerrar{
+  grid-area: cerrar;
+}
