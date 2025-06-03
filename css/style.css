@@ -183,3 +183,21 @@ a:link {
   gap: 1rem;
   margin-top: 0.5rem;
 }
+
+/* ESTILOS PARA LAS MODALES*/
+.modal{
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 1rem;
+
+}
+
+.modal img{
+width: ;
+}
