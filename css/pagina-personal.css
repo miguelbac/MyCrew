@@ -175,5 +175,14 @@ dialog .contenedorModal .especialidades{
 }
 dialog .contenedorModal .cerrar{
   grid-area: cerrar;
+<<<<<<< HEAD
 }
 >>>>>>> 4e7e129 (TODO: CSS Grid Modal)
+||||||| parent of 1e8d95d (Actualizado JS para cerrar todos los modales y no solo Miguel y actualizado modal pablo)
+}
+=======
+}
+dialog .contenedorModal .iconoPortatil{
+  
+}
+>>>>>>> 1e8d95d (Actualizado JS para cerrar todos los modales y no solo Miguel y actualizado modal pablo)

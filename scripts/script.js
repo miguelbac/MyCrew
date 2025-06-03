@@ -74,9 +74,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Funcionalidad de cerrar
     for (cerrar of btnCerrar){
         cerrar.addEventListener("click",function(){
-            modalMiguel.close();
+            for(modal of modales){
+                modal.close();
+            }
         });
     }
+    modalPablo.
      //Cerrar al clickar fuera
         window.onclick = function(event) {
         for(modal of modales){
