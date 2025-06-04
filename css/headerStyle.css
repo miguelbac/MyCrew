@@ -1,4 +1,9 @@
 /* ==== Estilos base ==== */
+:root {
+  --verdelima: #dbfb73;
+  --fondo-pagina: #fbffec;
+  --color-fuente: #37363e;
+}
 
 .top-bar {
   display: flex;
@@ -13,6 +18,7 @@
 .logo {
   font-family: 'Krona One', sans-serif;
   font-size: 2.5rem;
+
   color: #37363E;
   margin: 0;
 }
@@ -169,4 +175,12 @@ a:link {
   .menu-toggle {
     font-size: 1.5rem;
   }
+}
+
+
+footer {
+    background-color: var(--verdelima);
+    color: var(--color-fuente);
+    text-align: center;
+    padding: 0.5rem 0;
 }

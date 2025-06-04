@@ -19,12 +19,6 @@ header{
     height: 4rem;
     align-items: center;
 }
-footer {
-    background-color: var(--verdelima);
-    color: var(--color-fuente);
-    text-align: center;
-    padding: 0.5rem 0;
-}
 
 .container {
     max-width: 960px;

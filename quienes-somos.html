@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiénes Somos - Factoriza2</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/headerStyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <h3>Factoriza²</h3>
-        <a href="./index.html"><button><p>Inicio</p></button></a>
-    </header>
+    <header class="top-bar">
+  <h3 class="logo">Factoriza²</h3>
 
+<button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+  <nav class="botonera">
+    <a href="./index.html" class="boton">Inicio</a>
+    <a href="./quienes-somos.html" class="boton">Qué hacemos</a>
+    <a href="./contacto.html" class="boton">Contacto</a>
+  </nav>
+</header>
     <div class="presentacion">
         <h1>Nuestra Historia</h1>
         <p>
@@ -43,6 +54,9 @@
             Nuestro nombre representa la multiplicación de talentos, ideas y soluciones. Cada miembro del equipo aporta su factor único para potenciar los resultados. No solo desarrollamos páginas web, construimos experiencias digitales que marcan la diferencia.
         </p>
     </div>
+    <footer>
+    <p>&copy; 2025 Nuestra Empresa. Todos los derechos reservados.</p>
+  </footer>
 </body>
-
+<script src="./scripts/menu-hamburguesa.js"></script>
 </html>

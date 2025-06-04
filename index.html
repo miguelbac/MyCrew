@@ -31,9 +31,9 @@
 </button>
 
   <nav class="botonera">
-    <a href="./quienes-somos.html" class="boton">Inicio</a>
+    <a href="./index.html" class="boton">Inicio</a>
     <a href="./quienes-somos.html" class="boton">Qué hacemos</a>
-    <a href="./quienes-somos.html" class="boton">Contacto</a>
+    <a href="./contacto.html" class="boton">Contacto</a>
   </nav>
 </header>
 
@@ -102,18 +102,12 @@
       </div>
     </div>
   </div>
+  <footer>
+    <p>&copy; 2025 Nuestra Empresa. Todos los derechos reservados.</p>
+  </footer>
 </body>
-<script>
-  const toggleBtn = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.botonera');
+<script src="./scripts/menu-hamburguesa.js"></script>
 
-  toggleBtn.addEventListener('click', () => {
-    const expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-    toggleBtn.setAttribute('aria-expanded', !expanded);
-    nav.classList.toggle('active');
-    toggleBtn.classList.toggle('active');
-  });
-</script>
 
 
 </html>
