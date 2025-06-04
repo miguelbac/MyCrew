@@ -51,24 +51,25 @@
   </div>
 
     <div class="galeria">
-    <!-- UNDER CONSTRUCTION MODAL -->
+    <!--MODAL -->
       <dialog id="modalPablo" class="modal">
-        <div class="contenedorModal">
-          <img src="./img/fotoPablo.jpg" alt="Foto Pablo" class="fotoPerfil" height="20px">
-          <img src="./img/close.png" alt="Cerrar" class="cerrar" height="20px">
-          <h2>Pablo Suárez García</h2>
+      <div class="contenedorModal">
+          <h2>
+            Pablo Suárez García
+            <img src="./img/close.png" alt="Cerrar" class="cerrar" height="20px">
+          </h2>
+          <img src="./img/fotoPablo.jpg" alt="Foto Pablo" class="fotoPerfil">
           <p>¡Hey! Soy Pablo, estudiante de programacion de páginas web, en la Factoria F5.</p>
-          <img src="img/portatil.png" class="iconoPortatil" alt="Imagen Portatil">
           <div class="especialidades">
-            <p>Especialidades</p>
-            <ul>
-              <li>Levantamiento de pesas</li>
-              <li>HTML</li>
-              <li>Multiinstrumentista</li>
-            </ul>
+              <p>Especialidades</p>
+              <ul>
+                  <li>Levantamiento de pesas</li>
+                  <li>HTML</li>
+                  <li>Multiinstrumentista</li>
+              </ul>
           </div>
-        </div>
-      </dialog>
+      </div>
+</dialog>
       <!-- FIN MODAL -->
         <div class="tarjeta">
             <img src="./img/fotoPablo.jpg"
@@ -83,11 +84,14 @@
                 </a>
             </div>
         </div>
-        <!-- UNDER CONSTRUCTION MODAL -->
+        <!--MODAL -->
       <dialog id="modalMiguel" class="modal">
       <div class="contenedorModal">
-        <h2>Miguel Ballesteros Acebal</h2>
-        <img src="./img/miguelFoto.jpg" alt="Foto Miguel" class="fotoPerfil" height="20px">
+        <h2>
+          Miguel Ballesteros Acebal
+          <img src="./img/close.png" alt="Cerrar" class="cerrar" height="20px">          
+        </h2>
+        <img src="./img/miguelFoto.jpg" alt="Foto Miguel" class="fotoPerfil">
         <p>¡Hola! Soy Miguel, desarrollador web apasionado por crear soluciones digitales eficientes y creativas. Con experiencia en tecnologías como HTML, CSS, JavaScript y frameworks modernos, me especializo en construir sitios y aplicaciones web responsivas, rápidas.</p>
         <div class="especialidades">
           <p>Especialidades</p>
@@ -96,10 +100,7 @@
             <li>Chef</li>
             <li>Encantador de serpientes</li>
           </ul>
-
-        </div>
-        <img src="./img/close.png" alt="Cerrar" class="cerrar" height="20px">
-      
+        </div>      
       </div>  
       </dialog>
       <!-- FIN MODAL -->
@@ -122,12 +123,32 @@
           </a>
         </div>
       </div>
+      <!--MODAL -->
+      <dialog id="modalPaula" class="modal">
+        <div class="contenedorModal">
+            <h2>
+              Paula Fernández Aranda
+              <img src="./img/close.png" alt="Cerrar" class="cerrar" height="20px">
+            </h2>
+            <img src="./img/fotoPaula.png" alt="Foto Paula" class="fotoPerfil">
+            <p>"Futura Full Stack Developer, enfocada en dominar tanto frontend (React) como backend (Java). Apasionada por crear aplicaciones completas y eficientes, desde la interfaz hasta la base de datos."</p>
+            <div class="especialidades">
+                <p>Especialidades</p>
+                <ul>
+                    <li>Gestionar equipos</li>
+                    <li>Conocimento en tecnologías puntes</li>
+                    <li>Resolutiva</li>
+                </ul>
+            </div>
+          </div>
+      </dialog>
+     <!-- FIN MODAL -->
       <div class="tarjeta">
         <img
           src="./img/fotoPaula.png"
           alt="retrato Paula"
         />
-        <p>Paula Fernández Aranda</p>
+        <p id="nombrePaula">Paula Fernández Aranda</p>
         <div class="tarjeta-links">
           <a
             target="_blank"
@@ -146,26 +167,47 @@
           </a>
         </div>
       </div>
-
-    <div class="tarjeta">
-      <img src="./img/saulFoto.jpg" alt="retrato Saúl" />
-      <p>Saúl Otero Melchor</p>
-      <div class="tarjeta-links">
-        <a target="_blank" href="https://www.linkedin.com/in/sa%C3%BAl-otero-melchor-84b752282/">
-          <img src="https://cdn-icons-png.flaticon.com/512/4401/4401412.png" alt="linkedin" />
-        </a>
-        <a target="_blank" href="https://github.com/saulOMgit">
-          <img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="github" />
-        </a>
+      <!--MODAL -->
+      <dialog id="modalSaul" class="modal">
+        <div class="contenedorModal">
+            <h2>
+              Saúl Otero Melchor
+              <img src="./img/close.png" alt="Cerrar" class="cerrar" height="20px">
+            </h2>
+            <img src="./img/saulFoto.jpg" alt="Foto Saul" class="fotoPerfil">
+            <p>Desarrollador frontend especializado en frameworks JavaScript modernos (React/Vue). Fanático del ecosistema JS, se enfoca en crear interfaces dinámicas y optimizadas, dominando herramientas como Next.js y librerías de estado avanzado.</p>
+            <div class="especialidades">
+                <p>Especialidades</p>
+                <ul>
+                    <li>Resolución de problemas</li>
+                    <li>Comunicación clara</li>
+                    <li>Aprendizaje continuo</li>
+                </ul>
+            </div>
+          </div>
+      </dialog>
+     <!-- FIN MODAL -->
+      <div class="tarjeta">
+        <img src="./img/saulFoto.jpg" alt="retrato Saúl" />
+        <p  id="nombreSaul">Saúl Otero Melchor</p>
+        <div class="tarjeta-links">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/sa%C3%BAl-otero-melchor-84b752282/"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4401/4401412.png"
+              alt="linkedin"
+            />
+          </a>
+          <a target="_blank" href="https://github.com/saulOMgit">
+            <img
+              src="https://cdn-icons-png.flaticon.com/256/25/25231.png"
+              alt="github"
+            />
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <p>&copy; 2025 Nuestra Empresa. Todos los derechos reservados.</p>
-  </footer>
-</body>
-<script src="./scripts/menu-hamburguesa.js"></script>
-
-
-
+  </body>
 </html>
