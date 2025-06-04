@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 :root {
   --verdelima: #DBFB73;
   --fondo-pagina: #FBFFEC;
@@ -118,61 +119,92 @@ dialog .contenedorModal .especialidades {
 
 /* ESTILOS PARA LAS MODALES*/
 
+||||||| parent of 977e6e3 (Modales Funcinales y Responsivo)
+
+/* ESTILOS PARA LAS MODALES*/
+
+=======
+>>>>>>> 977e6e3 (Modales Funcinales y Responsivo)
 :root {
   --verdelima: #DBFB73;
   --fondo-pagina: #FBFFEC;
   --color-fuente: #37363E;
 }
-/* .modal{
-  background-color: #fff;
+
+
+dialog {
+  padding: 0;
+  width: 90%;
+  max-width: 800px;
+  border: none;
+  border-radius: 0;
+  margin: auto;
+  display: none; /* Cambiado a none para que no se abra automáticamente */
+  /* background-color: var(--fondo-pagina); */
+}
+
+
+dialog[open] {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin: 0px;
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  gap: 1rem;
-
+  flex-direction: column;
 }
 
-.modal img{
-/* width: ; */
-dialog{ padding: 0;}
-dialog .contenedorModal{
-    /* max-width: 1000px; */
-    /* margin: 20px auto; */
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3,auto);
-    grid-template-areas: 
-        "nav nav nav nav"
-        "fotoPerfil fotoPerfil descripcion descripcion"
-        "especialidades especialidades especialidades cerrar"
-        ;
-    padding: 0;
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-dialog .contenedorModal h2{
+
+/* Contenedor grid */
+dialog .contenedorModal {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "nav nav nav nav"
+  "fotoPerfil descripcion descripcion descripcion"
+  "fotoPerfil especialidades especialidades especialidades";
+  width: 100%;
+}
+
+/* Header con botón cerrar */
+dialog .contenedorModal h2 {
   background-color: var(--verdelima);
-  margin:0;
+  margin: 0;
   grid-area: nav;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-dialog .contenedorModal .fotoPerfil{
+
+/* Botón cerrar con flex */
+dialog .contenedorModal .cerrar {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Estilos de contenido */
+dialog .contenedorModal .fotoPerfil {
   grid-area: fotoPerfil;
   height: 150px;
   width: 150px;
   border-radius: 50%;
-
+  justify-self: center;
 }
 
 dialog .contenedorModal p {
   grid-area: descripcion;
+  padding: 0 1rem;
 }
 
-dialog .contenedorModal .especialidades{
+dialog .contenedorModal .especialidades {
   grid-area: especialidades;
+  /* padding: 0 1rem 1rem; */
+  /* justify-self: center;  */
 }
+<<<<<<< HEAD
 dialog .contenedorModal .cerrar{
   grid-area: cerrar;
 <<<<<<< HEAD
@@ -181,8 +213,54 @@ dialog .contenedorModal .cerrar{
 ||||||| parent of 1e8d95d (Actualizado JS para cerrar todos los modales y no solo Miguel y actualizado modal pablo)
 }
 =======
+||||||| parent of 977e6e3 (Modales Funcinales y Responsivo)
+dialog .contenedorModal .cerrar{
+  grid-area: cerrar;
+=======
+
+/* Versión móvil */
+@media (max-width: 767px) {
+  dialog .contenedorModal {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+      "nav"
+      "fotoPerfil"
+      "descripcion"
+      "especialidades";
+  }
+
+  dialog .contenedorModal .fotoPerfil {
+    margin: 0 auto;
+  }
+
+  dialog .contenedorModal p,
+  dialog .contenedorModal .especialidades {
+    text-align: center;
+    padding: 0 1rem;
+  }
+>>>>>>> 977e6e3 (Modales Funcinales y Responsivo)
 }
+<<<<<<< HEAD
 dialog .contenedorModal .iconoPortatil{
   
 }
 >>>>>>> 1e8d95d (Actualizado JS para cerrar todos los modales y no solo Miguel y actualizado modal pablo)
+||||||| parent of 977e6e3 (Modales Funcinales y Responsivo)
+dialog .contenedorModal .iconoPortatil{
+  
+}
+=======
+
+/* Versión tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  dialog {
+    max-width: 700px;
+  }
+
+  dialog .contenedorModal .fotoPerfil {
+    height: 130px;
+    width: 130px;
+  }
+}
+>>>>>>> 977e6e3 (Modales Funcinales y Responsivo)
