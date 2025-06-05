@@ -27,6 +27,9 @@
   display: flex;
   gap: 10px;
 }
+.botonera a {
+  font-size: 1.3rem;
+}
 
 .boton {
   background-color: var(--verdelima);
