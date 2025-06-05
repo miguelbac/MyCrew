@@ -27,6 +27,12 @@ body {
   padding: 0rem 5rem 0.5rem 5rem;
 }
 
+@media(max-width: 999px) {
+  .presentacion {
+    padding: 0rem 2rem 0.5rem 2rem;
+  }
+}
+
 .presentacion h1 {
   font-family: "Krona One", Arial, Helvetica, sans-serif;
 }
