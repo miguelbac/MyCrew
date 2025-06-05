@@ -5,7 +5,7 @@
 }
 
 dialog {
-  padding: 0;
+  padding: 0 0 2rem 0;
   width: 90%;
   max-width: 800px;
   border: none;
@@ -18,7 +18,16 @@ dialog[open] {
   display: flex;
   flex-direction: column;
 }
-
+dialog h2{
+  font-family: Krona One;
+  font-size: 1.1rem;
+  color: #37363e;
+}
+dialog p{
+  font-family: Roboto;
+  font-size: 1.1rem;
+  color: #37363e;
+}
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
