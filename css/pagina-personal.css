@@ -12,8 +12,11 @@ dialog {
   border-radius: 0;
   margin: auto;
   display: none; /* Cambiado a none para que no se abra automáticamente */
+  border-radius: 5px;
 }
-
+dialog:focus{
+  outline: none;
+}
 dialog[open] {
   display: flex;
   flex-direction: column;
