@@ -195,3 +195,7 @@ footer {
   padding: 0.5rem 0;
   width: 100%;
 }
+
+footer p{
+  font-family: Roboto;
+}
