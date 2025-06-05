@@ -104,6 +104,12 @@ body {
 .tarjeta p {
   margin: 0;
   font-family: "Krona One", Arial, Helvetica, sans-serif;
+  transition: transform .2s;
+}
+
+.tarjeta p:hover{
+  cursor: pointer;
+  transform: scale(1.4)
 }
 
 .tarjeta a img {

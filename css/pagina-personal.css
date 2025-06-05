@@ -101,3 +101,7 @@ dialog .contenedorModal .especialidades {
     width: 130px;
   }
 }
+
+.especialidades p {
+  text-decoration: underline;
+}
