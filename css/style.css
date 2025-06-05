@@ -24,12 +24,13 @@ body {
 
 .presentacion {
   text-align: center;
-  padding: 0rem 1rem 0.5rem 1rem;
+  padding: 0rem 5rem 0.5rem 5rem;
 }
 
 .presentacion h1 {
   font-family: "Krona One", Arial, Helvetica, sans-serif;
 }
+
 
 .galeria {
   display: grid;
@@ -104,12 +105,12 @@ body {
 .tarjeta p {
   margin: 0;
   font-family: "Krona One", Arial, Helvetica, sans-serif;
-  transition: transform .2s;
+  transition: transform .3s;
 }
 
 .tarjeta p:hover{
   cursor: pointer;
-  transform: scale(1.4)
+  transform: scale(1.15)
 }
 
 .tarjeta a img {
